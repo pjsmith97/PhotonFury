@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thing
+  m_Shader: {fileID: -8512187303908658807, guid: 32d3bcbebcbd57345a7a4ed9360fac25, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - BAKERY_NONE
+  - BAKERY_SHNONLINEAR
+  - DETAILS_MODE_PACKED
+  - GSAA
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _Noise1Strength
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BakedNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 36a6b5f7eb3f4b4b9867affc51734894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DFG:
+        m_Texture: {fileID: 2800000, guid: f8ddbd1e1d2a4415a10b4d48daeba743, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 36a6b5f7eb3f4b4b9867affc51734894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WavinessTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - BAKERY: 0
+    - DETAILS_MODE: 0
+    - UI_AdvancedSettingsHeader: 1
+    - UI_BakeryHeader: 0
+    - UI_DetailAlbedoNote: 0
+    - UI_DetailSmoothNote: 0
+    - UI_DetailsDocs: 0
+    - UI_DetailsHeader: 0
+    - UI_DetailsMapNote: 0
+    - UI_DetailsMapNoteSeparate: 0
+    - UI_GSAAHeader: 0
+    - UI_GSAANote: 0
+    - UI_GSDistortionNote: 1
+    - UI_GSLinesFalloffNote: 1
+    - UI_GSLinesNudgeNote: 1
+    - UI_GSLinesScaleNote: 1
+    - UI_GSWobbleNote: 1
+    - UI_GhistLinesBaseHeader: 1
+    - UI_GhistLinesPBRHeader: 1
+    - UI_GhostLinesDocs: 0
+    - UI_GhostLinesHeader: 1
+    - UI_GhostLinesLinesColorHeader: 1
+    - UI_GhostLinesLinesDistortionHeader: 1
+    - UI_GhostLinesLinesHeader: 1
+    - UI_GhostLinesWobbleHeader: 1
+    - UI_IgnoreMaskNote: 0
+    - UI_InternalHeader: 0
+    - UI_LInesAffectPBRNote: 1
+    - UI_LightmappingDocs: 0
+    - UI_LightmappingHeader: 1
+    - UI_MainHeader: 1
+    - UI_NoiseControlHeader: 1
+    - UI_ParallaxDocs: 0
+    - UI_ParallaxHeader: 0
+    - UI_UseTrailColorNote: 0
+    - UI_VRCDocs: 0
+    - UI_VRCFeaturesHeader: 0
+    - UI_VRCHideCameraHeader: 0
+    - UI_VRCHideInMirrorHeader: 0
+    - UI_VRCHideMainViewHeader: 0
+    - UI_WavinessHeader: 1
+    - _AOChannel: 1
+    - _AlbedoChannel: 0
+    - _BakedSpecular: 0
+    - _BakeryEnabled: 0
+    - _BakerySHNonLinear: 1
+    - _Bicubic: 0
+    - _BumpScale: 1
+    - _ColorBoost: 4.1
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DAlbedoScale: 1
+    - _DIgnoreMask: 0
+    - _DMappingSpace: 0
+    - _DNormalFlipY: 0
+    - _DNormalScale: 1
+    - _DPlanarAxisX: 0
+    - _DPlanarAxisY: 2
+    - _DSmoothScale: 1
+    - _DUVChannel: 0
+    - _DetailAsTintMask: 0
+    - _DetailMaskChannel: 2
+    - _DetailNormalMapScale: 1
+    - _DetailsOverlay: 0
+    - _DstBlend: 0
+    - _EmissionChannel: 0
+    - _EmissionEnabled: 0
+    - _EnableGSAA: 1
+    - _EnableParallax: 0
+    - _FlipBumpY: 0
+    - _ForceBoxProjection: 0
+    - _GLRimLightPush: 5
+    - _GLRimLightSharpness: 4
+    - _GSAAThreshold: 0.1
+    - _GSAAVariance: 0.05
+    - _GSGlowGradientDir: 1
+    - _GSGradientSharpness: 2
+    - _GSLinesAffectAlbedoScale: 1
+    - _GSLinesAffectMetallicScale: 1
+    - _GSLinesAffectPBR: 1
+    - _GSLinesAffectSmoothnessScale: 0.7
+    - _GSLinesCoordinates: 0
+    - _GSLinesEditMode: 0
+    - _GSLinesFalloff: 0.8
+    - _GSLinesNudge: 0.1
+    - _GSLinesScale: 10
+    - _GSLinesStrength: 0.2
+    - _GSNoiseScale: 2
+    - _GSNoiseStrength: 1
+    - _GSWobbleScale: 2
+    - _GSWobbleStrength: 0.1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeightRefPlane: 0.5
+    - _HeightScale: 0.006
+    - _HeightStepsMax: 16
+    - _HeightStepsMin: 8
+    - _MappingSpace: 0
+    - _MetalChannel: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _Noise1ScrollSpace: 0
+    - _Noise1Strength: 0.66
+    - _Noise2ScrollSpace: 0
+    - _Noise2Strength: 2
+    - _NoiseSpace: 0
+    - _NonlinearSH: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PlanarAxisX: 0
+    - _PlanarAxisY: 2
+    - _RoughnessMode: 0
+    - _Scale: 0
+    - _Scale2: 1.8
+    - _SmoothChannel: 3
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecOcclusion: 0.75
+    - _SpecularHighlights: 1
+    - _SpecularRoughnessMod: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseTrailColor: 0
+    - _VRCFeaturesEnabled: 0
+    - _VRCHideInDesktop: 0
+    - _VRCHideInDesktopCamera: 0
+    - _VRCHideInDesktopMirror: 0
+    - _VRCHideInVR: 0
+    - _VRCHideInVRCamera: 0
+    - _VRCHideInVRMirror: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 5.9921575, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GLBottomColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GLBottomLinesColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GLTopColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GLTopLinesColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GSGlowGradientRemap: {r: -0.5, g: 0.5, b: 0, a: 0}
+    - _GSLinesMovement: {r: 0, g: 0, b: 0, a: 0}
+    - _GSLinesOrigin: {r: -0.5, g: -1, b: 0, a: 0}
+    - _GSNoiseMovement: {r: 0, g: 0, b: 1, a: 1}
+    - _GSWobbleMovement: {r: 1, g: 1, b: 1, a: 1}
+    - _GSWobbleRange: {r: -0.2, g: 0.5, b: 0, a: 0}
+    - _MetallicRemap: {r: 0, g: 1, b: 0, a: 1}
+    - _Noise1Contrast: {r: 0, g: 0.38000056, b: 0, a: 1}
+    - _Noise1Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise2Contrast: {r: 0.4, g: 0.60596997, b: 0, a: 1}
+    - _Noise2Scroll: {r: -5, g: 0, b: 0, a: 0}
+    - _SmoothnessRemap: {r: 0, g: 1, b: 0, a: 1}
+    - _WavinessContrast: {r: 0, g: 1, b: 0, a: 1}
+    - _WavinessScroll: {r: -0.31, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

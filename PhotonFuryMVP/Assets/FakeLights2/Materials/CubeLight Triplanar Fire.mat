@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CubeLight Triplanar Fire
+  m_Shader: {fileID: 4800000, guid: 79e009b0cfc46064d853e8400464d378, type: 3}
+  m_ShaderKeywords: _LINEARFALLOFF_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f7e96904e8667e1439548f0f86389447, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: e0d9d3fcf9431ad44a5881eb0c85426f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopTexture0:
+        m_Texture: {fileID: 2800000, guid: 6b2910686f14f5844bf4707db2d5e2ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _1: 1
+    - _AboveLightWrap: 0
+    - _BelowLightWrap: 0.423
+    - _BoxScale: 2.57
+    - _BoxScale1: 1.31
+    - _BrightnessMultiplier: 1
+    - _BulbBrightness: 15.4
+    - _BulbBrightness1: 1
+    - _BulbSize: 0.067
+    - _BulbSize1: 0.488
+    - _BumpScale: 1
+    - _ColourBlendLevel: 0.563
+    - _ColourBlendSoftness: 1
+    - _Cutoff: 0.5
+    - _DepthFade: -0.86
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Falloff: 1
+    - _FalloffHardness: 0
+    - _Float0: 0.36
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GlowAnyway: 1
+    - _GlowBrightness: 0.77
+    - _GlowOcclusionSoftness: 5
+    - _GlowSize: 0.022
+    - _IgnoreNormals: 0
+    - _LengthFalloffHardness: 0
+    - _LightRange: 0.73
+    - _LightSize: 0.4
+    - _LightWrap: 0
+    - _LinearFalloff: 1
+    - _Metallic: 0
+    - _MiddleLightWrap: 0.601
+    - _Mode: 0
+    - _NearFade: 0.207
+    - _ObjectWorldBlend: 0
+    - _OcclusionStrength: 1
+    - _OverrideAmbient: 0
+    - _Parallax: 0.02
+    - _Posterise: 0
+    - _Pus: 0
+    - _PushForward: 0
+    - _Radius: 0.75
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Steps: 9.45
+    - _Tiling: 0.73
+    - _UVSec: 0
+    - _WidthHeightFalloffHardness: 0.647
+    - _ZWrite: 1
+    - __dirty: 0
+    - _depthfadecutoff: 0.5
+    - _depthfadedistance: 0.67
+    - _rounded: -0.92
+    - _rounding: 1.01
+    - _scaler: 1
+    - _scalesdf: 3.09
+    m_Colors:
+    - _AboveColour: {r: 0, g: 0, b: 0, a: 0}
+    - _BelowColour: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LightColour: {r: 0.9622642, g: 0.6451663, b: 0.05900679, a: 0}
+    - _LightColourInner: {r: 1, g: 0.97461593, b: 0.7783019, a: 0}
+    - _LightColourOuter: {r: 0.972549, g: 0.56954855, b: 0.11372543, a: 0}
+    - _MiddleColour: {r: 0, g: 0, b: 0, a: 0}

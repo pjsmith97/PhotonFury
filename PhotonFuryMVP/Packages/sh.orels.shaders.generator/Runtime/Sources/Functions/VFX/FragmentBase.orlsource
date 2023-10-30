@@ -1,0 +1,18 @@
+%ShadeDefines()
+{
+    #if defined(UNITY_PBS_USE_BRDF2) || defined(SHADER_API_MOBILE)
+      #define PLAT_QUEST
+    #else
+      #ifdef PLAT_QUEST
+        #undef PLAT_QUEST
+      #endif
+    #endif
+}
+
+%FragmentBase("FragmentBase")
+{
+    void FragmentBase(SurfaceData o, inout half4 FinalColor)
+    {
+        FinalColor = half4(o.Albedo.rgb + o.Emission.rgb, o.Alpha);
+    }
+}
