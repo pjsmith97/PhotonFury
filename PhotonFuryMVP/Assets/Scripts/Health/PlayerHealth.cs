@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using photonfury.level;
 
 namespace photonfury.health
 {
@@ -13,6 +14,8 @@ namespace photonfury.health
 
         private float healthbarwidth;
         private float healthbarwidth_default;
+
+        [SerializeField] LevelProgressManager lvlPrgsManager;
 
         // Start is called before the first frame update
         protected override void Start()
@@ -53,6 +56,8 @@ namespace photonfury.health
         {
             base.Death();
             this.transform.GetChild(2).gameObject.SetActive(false);
+
+            lvlPrgsManager.gameOver = true;
         }
     }
 

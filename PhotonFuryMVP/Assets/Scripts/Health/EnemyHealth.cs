@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using photonfury.level;
 
 namespace photonfury.health
 {
     public class EnemyHealth : Health
     {
+        [SerializeField] LevelProgressManager lvlPrgsManager;
+
         // Start is called before the first frame update
         protected override void Start()
         {
@@ -31,6 +34,8 @@ namespace photonfury.health
 
             var parent = gameObject.transform.parent.gameObject;
             parent.SetActive(false);
+
+            lvlPrgsManager.CheckEnemyStatus();
         }
     }
 }
