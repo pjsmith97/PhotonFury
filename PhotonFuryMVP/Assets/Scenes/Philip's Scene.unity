@@ -336,7 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkspeed: 10
   _jumpforce: 20
-  _dashforce: 5
+  _dashforce: 100
   lvlPrgsManager: {fileID: 1112921548}
   dashing: 0
   _dashanimator: {fileID: 1485478832}
@@ -6644,7 +6644,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1485478830
 MeshRenderer:
