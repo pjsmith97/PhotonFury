@@ -338,6 +338,8 @@ MonoBehaviour:
   _jumpforce: 20
   _dashforce: 5
   dashing: 0
+  dashShield: {fileID: 1485478830}
+  trail: {fileID: 1421138811}
 --- !u!136 &369044412
 CapsuleCollider:
   m_ObjectHideFlags: 0

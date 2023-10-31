@@ -15,10 +15,14 @@ using UnityEngine;
 
         private Vector3 PlayerMovementInput;
 
+        [Header ("Dashing")]
         public bool dashing;
-        //private bool isDed;
+        [SerializeField] MeshRenderer dashShield;
+        [SerializeField] TrailRenderer trail;
 
-        private void Start()
+    //private bool isDed;
+
+    private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
             //isDed = false;
@@ -32,7 +36,17 @@ using UnityEngine;
                 MovePlayer();
             }
 
-            //if(_rigidbody.velocity.magnitude <= _walkingspeed)
+            if (dashing)
+            {
+                dashShield.enabled = true;
+                trail.time = 0.5f;
+            }
+
+            else if (dashShield.enabled)
+            {
+                dashShield.enabled = false;
+                trail.time = 0;
+            }
         }
 
         private void FixedUpdate()
