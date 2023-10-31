@@ -544,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893771350905107171, guid: 32f72e0f037db45c9872b005d2f911dc, type: 3}
       propertyPath: doubleFire
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3893771350905107171, guid: 32f72e0f037db45c9872b005d2f911dc, type: 3}
       propertyPath: bulletsPerBeat
@@ -6822,7 +6822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893771350905107171, guid: 32f72e0f037db45c9872b005d2f911dc, type: 3}
       propertyPath: doubleFire
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3893771350905107171, guid: 32f72e0f037db45c9872b005d2f911dc, type: 3}
       propertyPath: bulletsPerBeat

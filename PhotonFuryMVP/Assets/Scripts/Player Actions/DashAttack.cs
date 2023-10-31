@@ -21,8 +21,8 @@ public class DashAttack : MonoBehaviour
 
     private void FixedUpdate()
     {
-        trail.endColor = new Color(1,
-            this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude / 5f, 1);
+        //trail.endColor = new Color(1,
+        //    this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude / 5f, 1);
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,22 +31,22 @@ public class DashAttack : MonoBehaviour
             this.transform.GetComponentInParent<NewCharacterController>().dashing)
         {
             Debug.Log("Found Enemy Enter");
-            if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
-            {
+            //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
+            //{
                 Debug.Log("Hit Enemy Enter");
                 Physics.IgnoreCollision(
                 this.transform.GetComponentInParent<Collider>(), other); // Ignore rigidbodycollisions with enemy
 
                 other.gameObject.GetComponent<EnemyHealth>().
                     Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
-            }
+            //}
 
-            else
-            {
-                Debug.Log("Not fast enough: " +
-                    this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
-                    + " Speed");
-            }
+            //else
+            //{
+            //    Debug.Log("Not fast enough: " +
+            //        this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
+            //        + " Speed");
+            //}
             
         }
     }
@@ -57,22 +57,22 @@ public class DashAttack : MonoBehaviour
             this.transform.GetComponentInParent <NewCharacterController>().dashing)
         {
             Debug.Log("Found Enemy Stay");
-            if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
-            {
+            //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
+            //{
                 Debug.Log("Hit Enemy Stay");
                 Physics.IgnoreCollision(
                 this.transform.GetComponentInParent<Collider>(), other); // Ignore collisions with enemy
 
                 other.gameObject.GetComponent<EnemyHealth>().
                     Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
-            }
+            //}
 
-            else
-            {
-                Debug.Log("Not fast enough: " +
-                    this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
-                    + " Speed");
-            }
+            //else
+            //{
+            //    Debug.Log("Not fast enough: " +
+            //        this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
+            //        + " Speed");
+            //}
         }
 
         else if(other.gameObject.tag == "Enemy" &&
