@@ -7,10 +7,6 @@
     <list default="true" id="2fdcd9b0-a75c-4157-9054-905224cea8e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blender/Level Design.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Blender/Level Design.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blender/Level Design.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Blender/Level Design.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blender/Panels.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Blender/Panels.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blender/Panels.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Blender/Panels.blend1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <updated>1698757653748</updated>
       <workItem from="1698757656702" duration="71000" />
       <workItem from="1698757939631" duration="580000" />
-      <workItem from="1698764148852" duration="352000" />
+      <workItem from="1698764148852" duration="1083000" />
     </task>
     <servers />
   </component>

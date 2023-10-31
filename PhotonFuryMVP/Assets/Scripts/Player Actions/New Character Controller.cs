@@ -66,7 +66,7 @@ using UnityEngine;
 
         void GetPlayerInput()
         {
-            PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+            PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
             PlayerMovementInput = Quaternion.Euler(0, 45, 0) * PlayerMovementInput;
         }
 
@@ -84,7 +84,8 @@ using UnityEngine;
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                _rigidbody.AddForce(PlayerMovementInput * _dashforce, ForceMode.Impulse);
+                //_rigidbody.AddForce(PlayerMovementInput * _dashforce, ForceMode.Impulse);
+                _rigidbody.velocity = PlayerMovementInput * 50;
                 dashing = true;
                 Debug.Log("DASHING!");
                 _dashanimator.SetBool("isOn", dashing);
