@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using photonfury.health;
+using photonfury.level;
 using UnityEngine;
 
 //namespace Karl.Movement
@@ -14,6 +15,8 @@ using UnityEngine;
         private Rigidbody _rigidbody;
 
         private Vector3 PlayerMovementInput;
+
+        [SerializeField] LevelProgressManager lvlPrgsManager;
 
         [Header ("Dashing")]
         public bool dashing;
@@ -31,7 +34,7 @@ using UnityEngine;
         private void Update()
         {
             GetPlayerInput();
-            if (!this.GetComponent<PlayerHealth>().AreUDed())
+            if (!lvlPrgsManager.gameOver)
             {
                 MovePlayer();
             }

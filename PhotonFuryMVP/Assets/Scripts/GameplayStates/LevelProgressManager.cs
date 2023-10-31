@@ -14,6 +14,8 @@ namespace photonfury.level
 
         [SerializeField] PauseGame pauseManager;
 
+        [SerializeField] float yDeathValue;
+
         public bool gameOver;
 
         // Start is called before the first frame update
@@ -40,6 +42,18 @@ namespace photonfury.level
                 }
 
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            if(playerHealth.gameObject.transform.position.y < yDeathValue)
+            {
+                if (!pauseManager.paused)
+                {
+                    pauseManager.TogglePause();
+
+                }
             }
         }
 

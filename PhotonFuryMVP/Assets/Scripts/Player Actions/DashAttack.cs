@@ -5,7 +5,6 @@ using photonfury.health;
 
 public class DashAttack : MonoBehaviour
 {
-    [SerializeField] TrailRenderer trail;
 
     // Start is called before the first frame update
     void Start()

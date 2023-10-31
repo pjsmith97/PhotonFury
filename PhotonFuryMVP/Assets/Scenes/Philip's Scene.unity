@@ -337,6 +337,7 @@ MonoBehaviour:
   _walkspeed: 10
   _jumpforce: 20
   _dashforce: 5
+  lvlPrgsManager: {fileID: 1112921548}
   dashing: 0
   dashShield: {fileID: 1485478830}
   trail: {fileID: 1421138811}
@@ -6120,6 +6121,7 @@ MonoBehaviour:
   playerHealth: {fileID: 369044413}
   enemyHealths: []
   pauseManager: {fileID: 1604941997}
+  yDeathValue: 0
   gameOver: 0
 --- !u!4 &1112921549
 Transform:
@@ -6609,7 +6611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598aad4e5e2304e31bb2a1cd864286b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trail: {fileID: 1421138811}
 --- !u!135 &1485478829
 SphereCollider:
   m_ObjectHideFlags: 0
