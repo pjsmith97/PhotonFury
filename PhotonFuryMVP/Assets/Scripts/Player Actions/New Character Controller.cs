@@ -14,6 +14,8 @@ using UnityEngine;
         private Rigidbody _rigidbody;
 
         private Vector3 PlayerMovementInput;
+
+        public bool dashing;
         //private bool isDed;
 
         private void Start()
@@ -29,11 +31,17 @@ using UnityEngine;
             {
                 MovePlayer();
             }
+
+            //if(_rigidbody.velocity.magnitude <= _walkingspeed)
         }
 
         private void FixedUpdate()
         {
-            
+            if(_rigidbody.velocity.magnitude < 10f && dashing)
+            {
+                dashing = false;
+                Debug.Log("Slowing...");
+            }
         }
 
         void GetPlayerInput()
@@ -56,6 +64,9 @@ using UnityEngine;
             if (Input.GetKeyDown(KeyCode.D))
             {
                 _rigidbody.AddForce(MoveVector * _dashforce, ForceMode.Impulse);
+                dashing = true;
+                Debug.Log("DASHING!");
+                
             }
         }
 

@@ -41,16 +41,16 @@ namespace photonfury.health
             healthbar.sizeDelta = new Vector2(x, 30);
         }
 
-        private void OnCollisionEnter(Collision other)
-        {
-            Debug.Log("Player impulse = " + other.impulse.magnitude);
-            if (other.gameObject.tag == "Enemy" && other.impulse.magnitude > 20f)
-            {
-                Debug.Log("Found Enemy");
-                other.gameObject.GetComponent<EnemyHealth>().
-                    Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
-            }
-        }
+        //private void OnCollisionEnter(Collision other)
+        //{
+        //    Debug.Log("Player impulse = " + other.impulse.magnitude);
+        //    if (other.gameObject.tag == "Enemy" && other.impulse.magnitude > 20f)
+        //    {
+        //        Debug.Log("Found Enemy");
+        //        other.gameObject.GetComponent<EnemyHealth>().
+        //            Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
+        //    }
+        //}
 
         public override void Death()
         {
