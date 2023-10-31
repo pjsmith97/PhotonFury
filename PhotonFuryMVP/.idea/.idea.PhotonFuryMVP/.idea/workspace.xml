@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fdcd9b0-a75c-4157-9054-905224cea8e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Character.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Default High.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Default High.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Default Low.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Default Low.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Grow.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Grow.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Shrink.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Shrink.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Philip's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Philip's Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +24,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/karlclarke/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/karlclarke/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/karlclarke/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/karlclarke/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/karlclarke/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/karlclarke/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/MacOS/Unity" />
@@ -98,6 +92,7 @@
       <updated>1698757653748</updated>
       <workItem from="1698757656702" duration="71000" />
       <workItem from="1698757939631" duration="580000" />
+      <workItem from="1698764148852" duration="1083000" />
     </task>
     <servers />
   </component>

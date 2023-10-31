@@ -66,13 +66,14 @@ using UnityEngine;
 
         void GetPlayerInput()
         {
-            PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+            PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+            PlayerMovementInput = Quaternion.Euler(0, 45, 0) * PlayerMovementInput;
         }
 
         void MovePlayer()
         {
             Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * _walkspeed;
-            MoveVector = Quaternion.Euler(0, 45, 0) * MoveVector;
+            //MoveVector = Quaternion.Euler(0, 45, 0) * MoveVector;
             _rigidbody.velocity = new Vector3(MoveVector.x, _rigidbody.velocity.y, MoveVector.z);
             //Quaternion targetRotation = Quaternion.LookRotation(MoveVector);
 
@@ -83,7 +84,8 @@ using UnityEngine;
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                _rigidbody.AddForce(MoveVector * _dashforce, ForceMode.Impulse);
+                //_rigidbody.AddForce(PlayerMovementInput * _dashforce, ForceMode.Impulse);
+                _rigidbody.velocity = PlayerMovementInput * 50;
                 dashing = true;
                 Debug.Log("DASHING!");
                 _dashanimator.SetBool("isOn", dashing);
