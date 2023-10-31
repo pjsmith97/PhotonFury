@@ -339,6 +339,7 @@ MonoBehaviour:
   _dashforce: 5
   lvlPrgsManager: {fileID: 1112921548}
   dashing: 0
+  _dashanimator: {fileID: 1485478832}
   dashShield: {fileID: 1485478830}
   trail: {fileID: 1421138811}
 --- !u!136 &369044412
@@ -449,6 +450,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: efd0b480d3a814441a529b124e1d0038, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efd0b480d3a814441a529b124e1d0038, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efd0b480d3a814441a529b124e1d0038, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: efd0b480d3a814441a529b124e1d0038, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -6577,6 +6590,7 @@ GameObject:
   - component: {fileID: 1485478828}
   - component: {fileID: 1485478831}
   - component: {fileID: 1485478830}
+  - component: {fileID: 1485478832}
   m_Layer: 0
   m_Name: DashSphere
   m_TagString: Untagged
@@ -6682,6 +6696,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485478826}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1485478832
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485478826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a609b94f300640069badba33742eacc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1544910984
 GameObject:
   m_ObjectHideFlags: 0

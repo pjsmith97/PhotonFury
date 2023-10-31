@@ -20,6 +20,8 @@ using UnityEngine;
 
         [Header ("Dashing")]
         public bool dashing;
+
+        [SerializeField] Animator _dashanimator;
         [SerializeField] MeshRenderer dashShield;
         [SerializeField] TrailRenderer trail;
 
@@ -41,13 +43,13 @@ using UnityEngine;
 
             if (dashing)
             {
-                dashShield.enabled = true;
+                //dashShield.enabled = true;
                 trail.time = 0.5f;
             }
 
             else if (dashShield.enabled)
             {
-                dashShield.enabled = false;
+                //dashShield.enabled = false;
                 trail.time = 0;
             }
         }
@@ -58,6 +60,7 @@ using UnityEngine;
             {
                 dashing = false;
                 Debug.Log("Slowing...");
+                _dashanimator.SetBool("isOn", dashing);
             }
         }
 
@@ -83,7 +86,7 @@ using UnityEngine;
                 _rigidbody.AddForce(MoveVector * _dashforce, ForceMode.Impulse);
                 dashing = true;
                 Debug.Log("DASHING!");
-                
+                _dashanimator.SetBool("isOn", dashing);
             }
         }
 

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fdcd9b0-a75c-4157-9054-905224cea8e8" name="Changes" comment="" />
+    <list default="true" id="2fdcd9b0-a75c-4157-9054-905224cea8e8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Character.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Default High.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Default High.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Default Low.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Default Low.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Grow.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Grow.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Shrink.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Shrink.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Philip's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Philip's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XWvSqD5bzjVOuNQzOzXUWTAZ3U" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,6 +35,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -77,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698757653748</updated>
       <workItem from="1698757656702" duration="71000" />
+      <workItem from="1698757939631" duration="580000" />
     </task>
     <servers />
   </component>
