@@ -5,10 +5,12 @@ using photonfury.health;
 
 public class DashAttack : MonoBehaviour
 {
+    [SerializeField] TrailRenderer trail;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,12 +19,18 @@ public class DashAttack : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        trail.endColor = new Color(1,
+            this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude / 5f, 1);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy" &&
             this.transform.GetComponentInParent<NewCharacterController>().dashing)
         {
-            Debug.Log("Found Enemy");
+            Debug.Log("Found Enemy Enter");
             if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
             {
                 Debug.Log("Hit Enemy Enter");
@@ -31,6 +39,13 @@ public class DashAttack : MonoBehaviour
 
                 other.gameObject.GetComponent<EnemyHealth>().
                     Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
+            }
+
+            else
+            {
+                Debug.Log("Not fast enough: " +
+                    this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
+                    + " Speed");
             }
             
         }
@@ -41,7 +56,7 @@ public class DashAttack : MonoBehaviour
         if(other.gameObject.tag == "Enemy" &&
             this.transform.GetComponentInParent <NewCharacterController>().dashing)
         {
-            Debug.Log("Found Enemy");
+            Debug.Log("Found Enemy Stay");
             if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
             {
                 Debug.Log("Hit Enemy Stay");
@@ -50,6 +65,13 @@ public class DashAttack : MonoBehaviour
 
                 other.gameObject.GetComponent<EnemyHealth>().
                     Damage(other.gameObject.GetComponent<EnemyHealth>().maxHealth);
+            }
+
+            else
+            {
+                Debug.Log("Not fast enough: " +
+                    this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude
+                    + " Speed");
             }
         }
 
