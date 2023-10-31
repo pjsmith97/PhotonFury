@@ -17,8 +17,8 @@ Material:
   - BAKERY_SHNONLINEAR
   - DETAILS_MODE_PACKED
   - GSAA
-  m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
