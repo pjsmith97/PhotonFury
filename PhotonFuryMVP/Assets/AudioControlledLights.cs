@@ -17,7 +17,7 @@ public class AudioControlledLights : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector4 thing = _audioLink.GetDataAtPixel(0, 0);
+        Vector4 thing = _audioLink.LerpAudioDataAtPixel(0,0);
         Debug.Log(thing);
         _light.intensity = thing.x * 5f;
     }
