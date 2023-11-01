@@ -29,10 +29,10 @@ public class DashAttack : MonoBehaviour
         if (other.gameObject.tag == "Enemy" &&
             this.transform.GetComponentInParent<NewCharacterController>().dashing)
         {
-            Debug.Log("Found Enemy Enter");
+            //Debug.Log("Found Enemy Enter");
             //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
             //{
-                Debug.Log("Hit Enemy Enter");
+                //Debug.Log("Hit Enemy Enter");
                 Physics.IgnoreCollision(
                 this.transform.GetComponentInParent<Collider>(), other); // Ignore rigidbodycollisions with enemy
 
@@ -55,10 +55,10 @@ public class DashAttack : MonoBehaviour
         if(other.gameObject.tag == "Enemy" &&
             this.transform.GetComponentInParent <NewCharacterController>().dashing)
         {
-            Debug.Log("Found Enemy Stay");
+            //Debug.Log("Found Enemy Stay");
             //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
             //{
-                Debug.Log("Hit Enemy Stay");
+                //Debug.Log("Hit Enemy Stay");
                 Physics.IgnoreCollision(
                 this.transform.GetComponentInParent<Collider>(), other); // Ignore collisions with enemy
 

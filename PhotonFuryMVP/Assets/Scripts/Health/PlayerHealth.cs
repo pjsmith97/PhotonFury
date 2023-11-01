@@ -35,7 +35,7 @@ namespace photonfury.health
         void UpdateHealthBar()
         {
             var healthleft = (float)healthValue / (float)maxHealth;
-            Debug.Log("Health: " + healthleft + " / " + maxHealth);
+            //Debug.Log("Health: " + healthleft + " / " + maxHealth);
 
             float x = healthleft * healthbarwidth_default;
             healthbar.sizeDelta = new Vector2(x, 30);
