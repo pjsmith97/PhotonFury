@@ -5,10 +5,9 @@ using photonfury.health;
 using photonfury.level;
 using UnityEngine;
 
-//namespace Karl.Movement
-//{
 public class NewCharacterController : MonoBehaviour
 {
+    [Header ("Speeds")]
     [SerializeField] private float _walkspeed;
     [SerializeField] private float _jumpforce;
     [SerializeField] private float _dashforce;
@@ -17,18 +16,25 @@ public class NewCharacterController : MonoBehaviour
 
     private Vector3 PlayerMovementInput;
 
-    [SerializeField] LevelProgressManager lvlPrgsManager;
-
-    [Header ("Dashing")]
+    [Header("Dashing")]
     public bool dashing;
+    public bool dashingImpulse;
     public float dashingTimer;
+    public float dashingCoolDownTimer;
+    [SerializeField] float dashingCoolDownDuration;
     [SerializeField] float dashingDuration;
     public int dashingDebugCntr;
     public int dashingEndDebugCntr;
-
-    //[SerializeField] Animator _dashanimator;
     [SerializeField] MeshRenderer dashShield;
     [SerializeField] TrailRenderer trail;
+    private PlayerHealth playerHealth;
+
+    [Header ("Level Manager")]
+    [SerializeField] LevelProgressManager lvlPrgsManager;
+
+    
+
+    //[SerializeField] Animator _dashanimator;
 
 //private bool isDed;
 
@@ -36,6 +42,8 @@ private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         dashingTimer = 0;
+        dashingCoolDownTimer = dashingCoolDownDuration;
+        playerHealth = GetComponent<PlayerHealth>();
         //isDed = false;
     }
 
@@ -63,28 +71,51 @@ private void Start()
         {
             MovePlayer();
         }
+
         if (dashing)
+        {
+            dashingTimer += Time.deltaTime;
+
+            if(dashingTimer >= dashingDuration)
             {
-                dashingTimer += Time.deltaTime;
+                dashingTimer = 0;
+                dashing = false;
 
-                if(dashingTimer >= dashingDuration)
-                {
-                    dashingTimer = 0;
-                    dashing = false;
+                dashingEndDebugCntr += 1;
+                Debug.Log("Dashing End Counter: " + dashingEndDebugCntr);
 
-                //Debug.Log("Slowing...");
-                    dashingEndDebugCntr += 1;
-                    Debug.Log("Dashing End Counter: " + dashingEndDebugCntr);
+                dashingCoolDownTimer = dashingCoolDownDuration;
 
-                    //_dashanimator.SetBool("isOn", dashing);
-                }
+                playerHealth.invincible = false;
             }
+        }
+
+        else if(dashingCoolDownTimer > 0)
+        {
+            dashingCoolDownTimer -= Time.deltaTime;
+
+            if (dashingCoolDownTimer <= 0)
+            {
+                dashingCoolDownTimer = 0;
+            }
+        }
     }
 
     void GetPlayerInput()
     {
         PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         PlayerMovementInput = Quaternion.Euler(0, 45, 0) * PlayerMovementInput;
+
+        if (Input.GetKeyDown(KeyCode.D) && dashingTimer == 0 && dashingCoolDownTimer == 0)
+        {
+            dashing = true;
+            dashingImpulse = true;
+
+            dashingDebugCntr += 1;
+            Debug.Log("Dashing Counter: " + dashingDebugCntr);
+
+            playerHealth.invincible = true;
+        }
     }
 
     void MovePlayer()
@@ -102,28 +133,18 @@ private void Start()
             _rigidbody.AddForce(Vector3.up * _jumpforce, ForceMode.Impulse);
         }
 
-        if (Input.GetKeyDown(KeyCode.D) && dashingTimer == 0)
+        if (dashingImpulse)
         {
-            //_rigidbody.AddForce(PlayerMovementInput * _dashforce, ForceMode.Impulse);
-            _rigidbody.velocity = PlayerMovementInput * _dashforce;
-            dashing = true;
+            dashingImpulse = false;
 
-            dashingDebugCntr += 1;
-            Debug.Log("Dashing Counter: " + dashingDebugCntr);
+            _rigidbody.velocity = PlayerMovementInput * _dashforce;
                 
             //dashingTimer = 0;
             //Debug.Log("DASHING!");
             //_dashanimator.SetBool("isOn", dashing);
         }
     }
-
-    //public void Death()
-    //{
-    //    isDed = true;
-    //    this.transform.GetChild(2).gameObject.SetActive(false);
-    //}
         
         
 }
-//}
 
