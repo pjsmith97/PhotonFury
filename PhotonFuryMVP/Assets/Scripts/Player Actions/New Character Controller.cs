@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class NewCharacterController : MonoBehaviour
 {
+    [Header("Euler Isometric")]
+    [SerializeField] float yValue;
+
     [Header ("Speeds")]
     [SerializeField] private float _walkspeed;
     [SerializeField] private float _jumpforce;
@@ -104,7 +107,7 @@ private void Start()
     void GetPlayerInput()
     {
         PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-        PlayerMovementInput = Quaternion.Euler(0, 45, 0) * PlayerMovementInput;
+        PlayerMovementInput = Quaternion.Euler(0, yValue, 0) * PlayerMovementInput;
 
         if (Input.GetKeyDown(KeyCode.D) && dashingTimer == 0 && dashingCoolDownTimer == 0)
         {
