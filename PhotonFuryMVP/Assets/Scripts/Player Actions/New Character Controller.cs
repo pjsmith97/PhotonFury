@@ -28,7 +28,7 @@ public class NewCharacterController : MonoBehaviour
     [SerializeField] float dashingDuration;
     public int dashingDebugCntr;
     public int dashingEndDebugCntr;
-    [SerializeField] MeshRenderer dashShield;
+    [SerializeField] GameObject dashShield;
     [SerializeField] TrailRenderer trail;
     private PlayerHealth playerHealth;
 
@@ -57,13 +57,13 @@ private void Start()
 
         if (dashing)
         {
-            dashShield.enabled = true;
+            dashShield.SetActive(true);
             trail.time = 0.5f;
         }
 
-        else if (dashShield.enabled)
+        else if (dashShield.activeInHierarchy)
         {
-            dashShield.enabled = false;
+            dashShield.SetActive(false);
             trail.time = 0;
         }
     }
@@ -109,6 +109,11 @@ private void Start()
         PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         PlayerMovementInput = Quaternion.Euler(0, yValue, 0) * PlayerMovementInput;
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _rigidbody.AddForce(Vector3.up * _jumpforce, ForceMode.Impulse);
+        }
+
         if (Input.GetKeyDown(KeyCode.D) && dashingTimer == 0 && dashingCoolDownTimer == 0)
         {
             dashing = true;
@@ -130,11 +135,6 @@ private void Start()
         //MoveVector = Quaternion.Euler(0, 45, 0) * MoveVector;
         _rigidbody.velocity = new Vector3(MoveVector.x, _rigidbody.velocity.y, MoveVector.z);
         //Quaternion targetRotation = Quaternion.LookRotation(MoveVector);
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _rigidbody.AddForce(Vector3.up * _jumpforce, ForceMode.Impulse);
-        }
 
         if (dashingImpulse)
         {

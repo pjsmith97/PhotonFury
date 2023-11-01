@@ -60,8 +60,15 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject == _player)
         {
+            Debug.Log("Hit player");
             _player.GetComponent<PlayerHealth>().Damage(20); // Apply 20
                                                              // damage to player
+            Destroy(this.gameObject);
+        }
+
+        else if(other.gameObject.tag != "Enemy" && other.gameObject.tag != "Player")
+        {
+            Debug.Log("Hit object " + other.gameObject.name);
             Destroy(this.gameObject);
         }
     }
