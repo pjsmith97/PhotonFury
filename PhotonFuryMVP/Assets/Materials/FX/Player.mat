@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Player
+  m_Shader: {fileID: -8512187303908658807, guid: 7f474cc3eee182b448a89286345d3352, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - BAKERY_NONE
+  - BAKERY_SHNONLINEAR
+  - DETAILS_MODE_PACKED
+  - GSAA
+  - PATTERN_SUPERSAMPLING_NONE
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BakedNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 36a6b5f7eb3f4b4b9867affc51734894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DFG:
+        m_Texture: {fileID: 2800000, guid: f8ddbd1e1d2a4415a10b4d48daeba743, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveBakedNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 36a6b5f7eb3f4b4b9867affc51734894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveOverlayTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RNM2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - BAKERY: 0
+    - DETAILS_MODE: 0
+    - PATTERN_SUPERSAMPLING: 0
+    - UI_AdvancedSettingsHeader: 1
+    - UI_BakeryHeader: 0
+    - UI_CircleLinesDegreeOffsetNote: 0
+    - UI_CircleOriginNote: 1
+    - UI_CirclesKaleidoscopeHeader: 1
+    - UI_CirclesKaleidoscopeUVNote: 0
+    - UI_CirclesSettingsHeader: 0
+    - UI_DepthBlendHeader: 1
+    - UI_DetailAlbedoNote: 0
+    - UI_DetailSmoothNote: 0
+    - UI_DetailsDocs: 0
+    - UI_DetailsHeader: 0
+    - UI_DetailsMapNote: 0
+    - UI_DetailsMapNoteSeparate: 0
+    - UI_DissolveBorderHeader: 0
+    - UI_DissolveHeader: 1
+    - UI_DissolveOverlayHeader: 0
+    - UI_DissolveTextureChannelNote: 0
+    - UI_DissolveTextureNote: 0
+    - UI_GSAAHeader: 0
+    - UI_GSAANote: 0
+    - UI_IgnoreMaskNote: 0
+    - UI_InternalHeader: 0
+    - UI_Layer1Header: 1
+    - UI_Layer2Header: 1
+    - UI_LightmappingDocs: 0
+    - UI_LightmappingHeader: 1
+    - UI_LinesHeader: 1
+    - UI_MainHeader: 1
+    - UI_ParallaxDocs: 0
+    - UI_ParallaxHeader: 0
+    - UI_PatternsDocs: 0
+    - UI_PatternsHeader: 1
+    - UI_PatternsPresesets: 0
+    - UI_PatternsSuperSamplingNote: 0
+    - UI_VRCDocs: 0
+    - UI_VRCFeaturesHeader: 0
+    - UI_VRCHideCameraHeader: 0
+    - UI_VRCHideInMirrorHeader: 0
+    - UI_VRCHideMainViewHeader: 0
+    - UI_VideoDocs: 0
+    - UI_Video_ScreenHeader: 1
+    - _AOChannel: 1
+    - _AlbedoChannel: 0
+    - _BakedSpecular: 0
+    - _BakeryEnabled: 0
+    - _BakerySHNonLinear: 1
+    - _Bicubic: 0
+    - _BumpScale: 1
+    - _CircleAddLines: 0
+    - _CircleCount: 30
+    - _CircleExpandSpeed: 0.1
+    - _CircleExpandTimeOffset: 0
+    - _CircleLinesDegreeOffset: 30
+    - _CircleLinesSmoothing: 0.1
+    - _CircleLinesSpinAlternate: 1
+    - _CircleLinesSpinSpeed: 0.1
+    - _CircleLinesSpinTimeOffset: 0
+    - _CircleLinesThickness: 5
+    - _CircleSmoothing: 0.1
+    - _CirclesKaleidoscopeSlices: 2
+    - _CirclesKaleidoscopeSpinOffset: 0
+    - _CirclesKaleidoscopeSpinSpeed: 0.5
+    - _CirclesKaleidoscopeTiling: 1
+    - _CirclesKaleidoscopeUV: 0
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DAlbedoScale: 1
+    - _DIgnoreMask: 0
+    - _DMappingSpace: 0
+    - _DNormalFlipY: 0
+    - _DNormalScale: 1
+    - _DPlanarAxisX: 0
+    - _DPlanarAxisY: 2
+    - _DSmoothScale: 1
+    - _DUVChannel: 0
+    - _DebugFadeGrad: 0
+    - _DepthBlend: 0
+    - _DepthBlendDistance: 0.2
+    - _DetailAsTintMask: 0
+    - _DetailMaskChannel: 2
+    - _DetailNormalMapScale: 1
+    - _DetailsOverlay: 0
+    - _DissolveBakedNoiseScale: 20
+    - _DissolveBakedNoiseStrength: 0.7
+    - _DissolveCutoff: 0.397
+    - _DissolveDirection: 1
+    - _DissolveGlowBorder: 1
+    - _DissolveGlowBorderWidth: 0.3
+    - _DissolveOverlayChannel: 0
+    - _DissolveOverlayStrength: 1
+    - _DissolveSource: 1
+    - _DissolveUseBakedNoise: 1
+    - _DstBlend: 0
+    - _EmissionChannel: 0
+    - _EmissionEnabled: 0
+    - _EnableGSAA: 1
+    - _EnableParallax: 0
+    - _FlipBumpY: 0
+    - _ForceBoxProjection: 0
+    - _GSAAThreshold: 0.1
+    - _GSAAVariance: 0.05
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeightRefPlane: 0.5
+    - _HeightScale: 0.006
+    - _HeightStepsMax: 16
+    - _HeightStepsMin: 8
+    - _IsAVProInput: 0
+    - _Layer1Scale: 10
+    - _Layer1Smoothing: 0.01
+    - _Layer1Width: 0.01
+    - _Layer2Scale: 5
+    - _Layer2Smoothing: 0.01
+    - _Layer2Width: 0.2
+    - _MappingSpace: 2
+    - _MetaPassEmissiveBoost: 1
+    - _MetalChannel: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseSpace: 1
+    - _NonlinearSH: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PlanarAxisX: 0
+    - _PlanarAxisY: 2
+    - _RoughnessMode: 0
+    - _SmoothChannel: 3
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecOcclusion: 0.75
+    - _SpecularHighlights: 1
+    - _SpecularRoughnessMod: 1
+    - _SrcBlend: 1
+    - _TargetAspectRatio: 1.7777777
+    - _UVSec: 0
+    - _VRCFeaturesEnabled: 0
+    - _VRCHideInDesktop: 0
+    - _VRCHideInDesktopCamera: 0
+    - _VRCHideInDesktopMirror: 0
+    - _VRCHideInVR: 0
+    - _VRCHideInVRCamera: 0
+    - _VRCHideInVRMirror: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _CircleOrigin: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _CirclesColor1: {r: 0, g: 0, b: 0, a: 1}
+    - _CirclesColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DepthBlendTint: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveBakedNoiseScroll: {r: 0, g: 0.5, b: 0, a: 0}
+    - _DissolveGlowBorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Layer1Color: {r: 5.3403134, g: 0, b: 0.25864393, a: 1}
+    - _Layer1Movement: {r: 0, g: 0.01, b: 0, a: 1}
+    - _Layer2Color: {r: 6.851723, g: 0, b: 0.36515045, a: 1}
+    - _Layer2Movement: {r: 0, g: 0.01, b: 0, a: 1}
+    - _MetallicRemap: {r: 0, g: 1, b: 0, a: 1}
+    - _SmoothnessRemap: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
