@@ -124,7 +124,7 @@ private void Start()
     void MovePlayer()
     {
         Vector3 MoveVector = dashing ?
-            transform.TransformDirection(PlayerMovementInput) * _walkspeed * _dashSpeed :
+            transform.TransformDirection(PlayerMovementInput) * (_walkspeed * _dashSpeed) :
             transform.TransformDirection(PlayerMovementInput) * _walkspeed;
 
         //MoveVector = Quaternion.Euler(0, 45, 0) * MoveVector;
