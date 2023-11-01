@@ -7,19 +7,24 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Accent 1
-  m_Shader: {fileID: 4800000, guid: cddaa3a02eb956746b502b80b76e92bc, type: 3}
+  m_Name: AL Emissive
+  m_Shader: {fileID: -8512187303908658807, guid: 3944d5378419d984583e5d7cfe7d611d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - AL_EFFECT_PULSE
+  - BAKERY_SHNONLINEAR
+  - DETAILS_MODE_PACKED
+  - GSAA
+  - _EMISSION
+  m_InvalidKeywords:
+  - BAKERY_NONE
+  - _AUDIOLINK_ON
   - _BICUBIC_SAMPLING_ON
-  - _NORMALMAP
-  - _PARALLAXMAP
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses:
   - ALWAYS
@@ -27,6 +32,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ALMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlphaMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,8 +48,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BarColor:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: c5d59e1d03c7b42998c97d062b4a8784, type: 3}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DDetailsNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DFG:
+        m_Texture: {fileID: 2800000, guid: f8ddbd1e1d2a4415a10b4d48daeba743, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAOMap:
@@ -79,6 +104,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _LTCGI_amp:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -111,6 +140,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -120,7 +153,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: a9fd7a125016f4b80bb373dd60e6980d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PackedMap:
@@ -128,10 +161,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 3f12e012830c64e1aafcb5372baa4831, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PulseTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -179,20 +216,87 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WVFRMBottomColor:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WVFRMMiddleColor:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WVFRMTopColor:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - AL_EFFECT: 3
+    - BAKERY: 0
+    - DETAILS_MODE: 0
+    - UI_AdvancedSettingsHeader: 1
+    - UI_AudioLinkDocs: 0
+    - UI_AudioLinkHeader: 1
+    - UI_AudioLinkThanksNote: 0
+    - UI_BakeryHeader: 0
+    - UI_BandNote: 0
+    - UI_DetailAlbedoNote: 0
+    - UI_DetailSmoothNote: 0
+    - UI_DetailsDocs: 0
+    - UI_DetailsHeader: 0
+    - UI_DetailsMapNote: 0
+    - UI_DetailsMapNoteSeparate: 0
+    - UI_GSAAHeader: 0
+    - UI_GSAANote: 0
+    - UI_GlobalSettingsHeader: 0
+    - UI_IgnoreMaskNote: 0
+    - UI_InternalHeader: 0
+    - UI_LightmappingDocs: 0
+    - UI_LightmappingHeader: 1
+    - UI_MainHeader: 1
+    - UI_ParallaxDocs: 0
+    - UI_ParallaxHeader: 0
+    - UI_PulseTextureNote: 0
+    - UI_PulseTextureNote2: 0
+    - UI_SelectedEffect: 0
+    - UI_Spacer: 0
+    - UI_UVColorsNote: 0
+    - UI_VRCDocs: 0
+    - UI_VRCFeaturesHeader: 0
+    - UI_VRCHideCameraHeader: 0
+    - UI_VRCHideInMirrorHeader: 0
+    - UI_VRCHideMainViewHeader: 0
     - _ACES: 0
+    - _ALUVChannel: 0
+    - _AOChannel: 1
+    - _AlbedoChannel: 0
     - _AlphaMaskChannel: 3
     - _AlphaMaskOpacity: 1
     - _AreaLitRoughnessMult: 1
     - _AreaLitStrength: 1
     - _AreaLitToggle: 0
-    - _AudioLinkEmission: 0
+    - _AudioHueShift: 4.31
+    - _AudioLinkEmission: 1
     - _AudioLinkEmissionMeta: 0
-    - _AudioLinkEmissionStrength: 1
+    - _AudioLinkEmissionStrength: 5
     - _BAKERY_LMSPEC: 0
     - _BAKERY_SHNONLINEAR: 0
+    - _BakedSpecular: 0
+    - _BakeryEnabled: 0
     - _BakeryMode: 0
+    - _BakerySHNonLinear: 1
+    - _Band: 0
+    - _BandFrequency: 1
+    - _BandHistoryRange: 128
+    - _BandScrollAxis: 1
+    - _BarAxis: 1
+    - _BarBand: 1
+    - _BarScale: 1
+    - _BarSmoothing: 7
+    - _Bicubic: 0
     - _BicubicLightmap: 1
     - _BlendMode: 0
     - _Brightness: 1
@@ -208,9 +312,21 @@ Material:
     - _ContrastReflShad: 1
     - _CubeThreshold: 0.45
     - _Cull: 2
+    - _CullMode: 2
     - _Cutoff: 0.5
+    - _DAlbedoScale: 1
+    - _DIgnoreMask: 0
+    - _DMappingSpace: 0
+    - _DNormalFlipY: 0
+    - _DNormalScale: 1
+    - _DPlanarAxisX: 0
+    - _DPlanarAxisY: 2
+    - _DSmoothScale: 1
+    - _DUVChannel: 0
+    - _Delay: 0
     - _DetailAOBlend: 2
     - _DetailAlbedoBlend: 2
+    - _DetailAsTintMask: 0
     - _DetailMaskChannel: 3
     - _DetailMetallicBlend: 2
     - _DetailMetallicChannel: 2
@@ -229,37 +345,55 @@ Material:
     - _DetailTriplanarFalloff: 1
     - _DetailUseSmoothness: 0
     - _DetailWorkflow: 0
+    - _DetailsOverlay: 0
     - _DstBlend: 0
     - _EdgeFade: 0.1
     - _EmissPulseSpeed: 1
     - _EmissPulseStrength: 1
     - _EmissPulseWave: 0
+    - _Emission: 1
+    - _EmissionChannel: 0
+    - _EmissionEnabled: 1
     - _EmissionIntensity: 1
+    - _EnableGSAA: 1
+    - _EnableParallax: 0
     - _Filtering: 0
+    - _FlipBumpY: 0
+    - _ForceBoxProjection: 0
     - _FresnelStrength: 1
     - _GSAA: 0
     - _GSAAStrength: 1
+    - _GSAAThreshold: 0.1
+    - _GSAAVariance: 0.05
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HDRReflShad: 1
     - _HeightChannel: 3
     - _HeightMult: 0
+    - _HeightRefPlane: 0.5
+    - _HeightScale: 0.006
+    - _HeightStepsMax: 16
+    - _HeightStepsMin: 8
     - _Hue: 0
     - _HueDet: 0
     - _HueEmiss: 0
     - _HuePost: 0
+    - _KillEffects: 0
     - _LTCGI: 0
     - _LTCGIStrength: 1
     - _LTCGI_DIFFUSE_OFF: 0
     - _LTCGI_SPECULAR_OFF: 0
+    - _MappingSpace: 0
     - _MetaCull: 0
+    - _MetalChannel: 0
     - _Metallic: 0
     - _MetallicChannel: 2
     - _MetallicMult: 0
     - _MirrorToggle: 0
     - _Mode: 0
     - _NaNLmao: 0
+    - _NonlinearSH: 0
     - _OcclusionChannel: 0
     - _OcclusionMult: 0
     - _OcclusionStrength: 1
@@ -268,6 +402,16 @@ Material:
     - _Parallax: 0.02
     - _ParallaxOffset: 0
     - _ParallaxSteps: 25
+    - _PlanarAxisX: 0
+    - _PlanarAxisY: 2
+    - _Pulse: 1
+    - _PulseBand: 1
+    - _PulseEmissionMode: 0
+    - _PulseMode: 0
+    - _PulseRotation: 90
+    - _PulseSmoothing: 5
+    - _PulseStrength: 5
+    - _PulseTextureAdjustment: 1
     - _QueueOffset: 0
     - _RainToggle: 0
     - _ReflCubeOverrideToggle: 0
@@ -288,6 +432,7 @@ Material:
     - _RippleSpeed: 10
     - _RippleStr: 1
     - _RoughnessChannel: 1
+    - _RoughnessMode: 0
     - _RoughnessMult: 0
     - _SSR: 0
     - _SSRHeight: 0.1
@@ -303,8 +448,12 @@ Material:
     - _ScatterIntensity: 1
     - _ScatterPow: 1
     - _ScatterShadow: 1
+    - _SmoothChannel: 3
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _SpecOcclusion: 0.75
     - _SpecularHighlights: 1
+    - _SpecularRoughnessMod: 1
     - _SpecularStrength: 1
     - _SrcBlend: 1
     - _Subsurface: 0
@@ -318,29 +467,49 @@ Material:
     - _UVAlphaMask: 0
     - _UVDetailMask: 0
     - _UVEmissMask: 0
+    - _UVFlipXY: 0
     - _UVHeightMask: 0
+    - _UVHistoryRange: 128
     - _UVPri: 0
     - _UVRainMask: 0
     - _UVRimMask: 0
     - _UVRimMaskRotate: 0
     - _UVSec: 0
+    - _UVUseThemeColors: 0
     - _UnityFogToggle: 1
     - _UseAlphaMask: 0
     - _UseFresnel: 1
     - _UseHeight: 0
     - _UseSmoothness: 0
+    - _VRCFeaturesEnabled: 0
+    - _VRCHideInDesktop: 0
+    - _VRCHideInDesktopCamera: 0
+    - _VRCHideInDesktopMirror: 0
+    - _VRCHideInVR: 0
+    - _VRCHideInVRCamera: 0
+    - _VRCHideInVRMirror: 0
     - _VertexBaseColor: 0
+    - _WVFRMFlip: 0
+    - _WVFRMFlipUVDirection: 0
+    - _WVFRMMiddleLine: 0
+    - _WVFRMMiddleLineWidth: 0.05
+    - _WVFRMOffset: 0.5
+    - _WVFRMScale: 0.05
     - _Workflow: 0
     - _WrappingFactor: 0.01
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
+    - _ALTint: {r: 0, g: 1, b: 0.99020815, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailScroll: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MetallicRemap: {r: 0, g: 1, b: 0, a: 1}
+    - _PulseTextureDirection: {r: 0, g: 1, b: 0, a: 0}
     - _RimCol: {r: 1, g: 1, b: 1, a: 1}
     - _ScatterCol: {r: 1, g: 1, b: 1, a: 1}
+    - _SmoothnessRemap: {r: 0, g: 1, b: 0, a: 1}
     - _TintReflShad: {r: 1, g: 1, b: 1, a: 1}
     - _UV0Scroll: {r: 0, g: 0, b: 0, a: 0}
     - _UV1Scroll: {r: 0, g: 0, b: 0, a: 0}
