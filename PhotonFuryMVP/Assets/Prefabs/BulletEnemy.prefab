@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.24, y: -2.13, z: 9.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5715025343320427699}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 6674657359397333701}
   m_Layer: 0
   m_Name: BulletSpawner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,13 +195,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1032854129241819517, guid: 03cdfe489cc374a438ea38d06986f0dc, type: 3}
   bulletLife: 6
-  speed: 3
+  speed: 2.5
   player: {fileID: 0}
   spawnerType: 1
-  BPM: 135
+  BPM: 110
   bulletsPerBeat: 1
   spinSpeed: 1
-  doubleFire: 0
+  doubleFire: 1
   timer: 0
 --- !u!114 &2821954737736355896
 MonoBehaviour:
@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  lvlPrgsManager: {fileID: 0}
 --- !u!136 &6674657359397333701
 CapsuleCollider:
   m_ObjectHideFlags: 0
