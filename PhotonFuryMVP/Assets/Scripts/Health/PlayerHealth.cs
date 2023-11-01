@@ -17,6 +17,8 @@ namespace photonfury.health
 
         [SerializeField] LevelProgressManager lvlPrgsManager;
 
+        public bool invincible;
+
         // Start is called before the first frame update
         protected override void Start()
         {
@@ -27,9 +29,12 @@ namespace photonfury.health
 
         public override void Damage(int dmgValue)
         {
-            base.Damage(dmgValue);
+            if (!invincible)
+            {
+                base.Damage(dmgValue);
 
-            UpdateHealthBar();
+                UpdateHealthBar();
+            }
         }
 
         void UpdateHealthBar()
