@@ -1079,15 +1079,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1388073
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.268
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.306194
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1117,6 +1117,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1144130467122146687, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcabb869294de46408b230307890c555, type: 2}
+    - target: {fileID: 27109247920548996, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2102f3572c4f248d7a0e51e01bdd3331, type: 2}
+    - target: {fileID: 27109247920548996, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1e6166cc05b04437abf6cdae8ebacb4, type: 2}
     - target: {fileID: 919132149155446097, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
       propertyPath: m_Name
       value: Enemy Laser
@@ -1124,8 +1136,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668084249}
   m_SourcePrefab: {fileID: 100100000, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+--- !u!1 &668084248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
+  m_PrefabInstance: {fileID: 668084247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &668084249
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668084248}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4508ce22c33e44247bd1988ae2c891c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &686302407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2304687499243045678, guid: 8c8ce0e7bbcd04e9583d6a83fc95f998, type: 3}
