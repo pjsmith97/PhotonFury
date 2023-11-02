@@ -54,6 +54,9 @@ public class Bullet : MonoBehaviour
         this.transform.rotation = rot;
         bulletLife = life;
         _player = player;
+
+        this.transform.GetChild(0).GetComponent<BulletBlock>().playerCollider =
+            player.GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -66,7 +69,9 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        else if(other.gameObject.tag != "Enemy" && other.gameObject.tag != "Player")
+        else if (other.gameObject.tag != "Enemy" &&
+            other.gameObject.tag != "Player"
+            && other.gameObject.tag != "Bullet") 
         {
             Debug.Log("Hit object " + other.gameObject.name);
             Destroy(this.gameObject);
