@@ -16,6 +16,8 @@ namespace photonfury.health
         private float healthbarwidth;
         private float healthbarwidth_default;
 
+        [SerializeField] private GameObject deathscreen;
+
         [SerializeField] LevelProgressManager lvlPrgsManager;
 
         public bool invincible;
@@ -61,6 +63,7 @@ namespace photonfury.health
         public override void Death()
         {
             base.Death();
+            deathscreen.SetActive(true);
             GetComponent<KarlsMovement>().enabled = false;
             lvlPrgsManager.GameOver();
         }
