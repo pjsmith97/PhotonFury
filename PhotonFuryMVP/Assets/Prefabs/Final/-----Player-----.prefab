@@ -5170,7 +5170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkspeed: 5
-  dashmultiplier: 2
+  dashmultiplier: 1.5
   jumpvelocity: 7
   _jumpcoolduration: 0.1
   groundMask:
@@ -5198,6 +5198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthbar: {fileID: 0}
+  deathscreen: {fileID: 0}
   lvlPrgsManager: {fileID: 0}
   invincible: 0
 --- !u!1 &3017198612432702778
@@ -5720,7 +5721,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8673271391040461688}
