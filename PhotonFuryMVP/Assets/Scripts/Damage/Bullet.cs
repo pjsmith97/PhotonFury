@@ -65,7 +65,7 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("Hit player");
             _player.GetComponent<PlayerHealth>().Damage(20); // Apply 20 damage
-            _player.transform.GetChild(6).GetComponent<Animator>().SetTrigger("onHit");
+            
             Destroy(this.gameObject);
         }
 
