@@ -28,8 +28,8 @@ public class NewCharacterController : MonoBehaviour
     [SerializeField] float dashingDuration;
     public int dashingDebugCntr;
     public int dashingEndDebugCntr;
-    [SerializeField] GameObject dashShield;
-    [SerializeField] TrailRenderer trail;
+    [SerializeField] private GameObject dashShield;
+    [SerializeField] private TrailRenderer trail;
     private PlayerHealth playerHealth;
 
     [Header ("Level Manager")]

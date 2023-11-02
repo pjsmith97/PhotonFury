@@ -1,5 +1,6 @@
 using System;
 using System.Numerics;
+using photonfury.health;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Quaternion = UnityEngine.Quaternion;
@@ -33,12 +34,16 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         
         [Header("Dashing")]
         [SerializeField] private float _dashduration = 1;
-        [SerializeField] private float _dashcoolduration = 2;
-        private bool _dashing = false;
+        [SerializeField] private float _dashcoolduration = 2; 
+        public bool dashing = false;
         private bool _ableToDash = true;
         private float _dashtimer;
         private bool _dashcooling = false;
         private float _dashcooltimer;
+        
+        [SerializeField] GameObject dashShield;
+        [SerializeField] TrailRenderer trail;
+        private PlayerHealth _playerHealth;
 
         [Header("Slope Handling")]
         [SerializeField] private float maxSlopeAngle = 45;
@@ -47,36 +52,38 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         // Start is called before the first frame update
         void Start() {
             _rigidbody = GetComponent<Rigidbody>();
+            _playerHealth = GetComponent<PlayerHealth>();
         }
         // Update is called once per frame
         void Update() {
             GroundCheck();
             GetPlayerInput();
+
+            _playerHealth.invincible = dashing;
+            dashShield.SetActive(dashing);
+            trail.time = dashing ?  0.5f : 0;
         }
         
         private void FixedUpdate() {
-            if (_dashing) {
+            if (dashing) {
                 Dash();
             }
             if (_dashcooling) {
                 DashCool();
             }
-
             if (_jumping) {
                 Jump();
             }
-
             if (_jumpcooling) {
                 JumpCool();
             }
-            
             MovePlayer();
         }
         void GetPlayerInput() {
             _playerInputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
             _playerInputVector = Quaternion.Euler(0, _playerInputAngleOffset, 0) * _playerInputVector;
             if (Input.GetKeyDown(KeyCode.D) && _ableToDash) {
-                _dashing = true;
+                dashing = true;
                 _ableToDash = false;
             }
             if (Input.GetKeyDown(KeyCode.Space) && _ableToJump && _isGrounded) {
@@ -86,7 +93,7 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         }
         void MovePlayer() {
             _playerMovementVector =
-                _dashing ? _playerInputVector * (walkspeed * dashmultiplier) : _playerInputVector * walkspeed;
+                dashing ? _playerInputVector * (walkspeed * dashmultiplier) : _playerInputVector * walkspeed;
             _rigidbody.velocity = new Vector3(_playerMovementVector.x, _rigidbody.velocity.y, _playerMovementVector.z);
 
             if (OnSlope()) {
@@ -97,7 +104,7 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
             _dashtimer += Time.deltaTime;
             if (_dashtimer >= _dashduration) {
                 _dashtimer = 0;
-                _dashing = false;
+                dashing = false;
                 _dashcooling = true;
             }
         }

@@ -272,9 +272,9 @@ Material:
     - _DissolveBakedNoiseScroll: {r: 0, g: 0.5, b: 0, a: 0}
     - _DissolveGlowBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Layer1Color: {r: 0, g: 4, b: 0.19839382, a: 1}
+    - _Layer1Color: {r: 0, g: 5.3403134, b: 0, a: 1}
     - _Layer1Movement: {r: 0, g: 0.5, b: 0, a: 1}
-    - _Layer2Color: {r: 0, g: 5.1320753, b: 0.32243347, a: 1}
+    - _Layer2Color: {r: 0, g: 6.851723, b: 0, a: 1}
     - _Layer2Movement: {r: 0, g: 0.5, b: 0, a: 1}
     - _MetallicRemap: {r: 0, g: 1, b: 0, a: 1}
     - _SmoothnessRemap: {r: 0, g: 1, b: 0, a: 1}

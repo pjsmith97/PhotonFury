@@ -4,7 +4,7 @@ using Karl.Movement.YesPhillipNoticeMyNameSpace;
 using UnityEngine;
 using photonfury.health;
 
-public class DashAttack : MonoBehaviour
+public class DashAttack1 : MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class DashAttack : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy" &&
-            this.transform.GetComponentInParent<NewCharacterController>().dashing)
+            this.transform.GetComponentInParent<KarlsMovement>().dashing)
         {
             //Debug.Log("Found Enemy Enter");
             //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
@@ -54,7 +54,7 @@ public class DashAttack : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Enemy" &&
-            this.transform.GetComponentInParent <NewCharacterController>().dashing)
+            this.transform.GetComponentInParent <KarlsMovement>().dashing)
         {
             //Debug.Log("Found Enemy Stay");
             //if(this.transform.GetComponentInParent<Rigidbody>().velocity.magnitude >= 10f)
