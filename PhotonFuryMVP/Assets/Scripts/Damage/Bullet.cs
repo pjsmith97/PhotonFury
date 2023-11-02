@@ -54,14 +54,26 @@ public class Bullet : MonoBehaviour
         this.transform.rotation = rot;
         bulletLife = life;
         _player = player;
+
+        this.transform.GetChild(0).GetComponent<BulletBlock>().playerCollider =
+            player.GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == _player)
         {
-            _player.GetComponent<PlayerHealth>().Damage(20); // Apply 20
-                                                             // damage to player
+            Debug.Log("Hit player");
+            _player.GetComponent<PlayerHealth>().Damage(20); // Apply 20 damage
+            
+            Destroy(this.gameObject);
+        }
+
+        else if (other.gameObject.tag != "Enemy" &&
+            other.gameObject.tag != "Player"
+            && other.gameObject.tag != "Bullet") 
+        {
+            Debug.Log("Hit object " + other.gameObject.name);
             Destroy(this.gameObject);
         }
     }

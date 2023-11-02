@@ -18,7 +18,7 @@ public class AudioControlledLights : MonoBehaviour
     void Update()
     {
         Vector4 thing = _audioLink.LerpAudioDataAtPixel(0,0);
-        Debug.Log(thing);
-        _light.intensity = thing.x * 5f;
+        //Debug.Log(thing);
+        _light.intensity = thing.x;
     }
 }

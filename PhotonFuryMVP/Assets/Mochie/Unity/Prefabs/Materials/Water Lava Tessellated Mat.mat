@@ -2,15 +2,26 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water Lava Tessellated Mat
   m_Shader: {fileID: 4800000, guid: 00a89f031c0a48f4cbc236411e0e35ff, type: 3}
-  m_ShaderKeywords: _CAUSTICS_VORONOI_ON _DEPTHFOG_ON _EDGEFADE_ON _EMISSION_ON _FLOW_ON
-    _NORMALMAP_1_ON _OPAQUE_MODE_ON _VERT_FLIPBOOK_ON
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _CAUSTICS_VORONOI_ON
+  - _DEPTHFOG_ON
+  - _EDGEFADE_ON
+  - _EMISSION_ON
+  - _FLOW_ON
+  - _FOAM_NORMALS_ON
+  - _NORMALMAP_1_ON
+  - _OPAQUE_MODE_ON
+  - _VERT_FLIPBOOK_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +30,7 @@ Material:
     RenderType: Opaque
   disabledShaderPasses:
   - ALWAYS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -28,6 +40,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BlendNoise:
         m_Texture: {fileID: 2800000, guid: 352f401c145570f488487622cd5fdaa6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CausticsDistortionTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticsTex:
@@ -126,6 +142,11 @@ Material:
         m_Texture: {fileID: 18700000, guid: f9e27b340e9c5194199078a54772ec10, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _VertexOffsetMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AreaLitRoughnessMult: 1
     - _AreaLitStrength: 1
@@ -157,6 +178,7 @@ Material:
     - _EdgeFadePower: 300
     - _EdgeFadeSSR: 0.1
     - _EdgeFadeToggle: 1
+    - _EmissionDistortionStrength: 0
     - _EmissionMapStochasticToggle: 0
     - _EmissionToggle: 1
     - _FlowMapUV: 0
@@ -176,6 +198,7 @@ Material:
     - _FoamRoughness: 0.6
     - _FoamStochasticToggle: 0
     - _FoamToggle: 0
+    - _FogBrightness: 1
     - _FogPower: 10
     - _FogToggle: 1
     - _Metallic: 0
@@ -228,6 +251,8 @@ Material:
     - _VertOffsetMode: 4
     - _VertRemapMax: 1
     - _VertRemapMin: -1
+    - _VertexOffsetMaskChannel: 0
+    - _VertexOffsetMaskStrength: 1
     - _VoronoiSpeed: 1.5
     - _VoronoiWaveHeight: 1
     - _WaveDirection0: 0
@@ -271,6 +296,7 @@ Material:
     - _MainTexScroll: {r: 0, g: 0.1, b: 0, a: 0}
     - _NoiseTexScale: {r: 3, g: 3, b: 0, a: 0}
     - _NoiseTexScroll: {r: 0, g: 0.1, b: 0, a: 0}
+    - _NonGrabBackfaceTint: {r: 0, g: 0, b: 0, a: 0}
     - _NonGrabColor: {r: 0, g: 0, b: 0, a: 0}
     - _NormalMapFlipbookScale: {r: 3, g: 3, b: 0, a: 0}
     - _NormalMapScale0: {r: 3, g: 3, b: 0, a: 0}
@@ -286,3 +312,4 @@ Material:
     - _VoronoiOffset: {r: 0, g: 1.57, b: 0, a: 0}
     - _VoronoiScale: {r: 5, g: 5, b: 0, a: 0}
     - _VoronoiScroll: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -410,7 +410,7 @@ Material:
     - _PulseMode: 0
     - _PulseRotation: 90
     - _PulseSmoothing: 5
-    - _PulseStrength: 5
+    - _PulseStrength: 10
     - _PulseTextureAdjustment: 1
     - _QueueOffset: 0
     - _RainToggle: 0
@@ -501,10 +501,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _ALTint: {r: 1, g: 0, b: 0.73324823, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0, b: 0.6666665, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailScroll: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 1, g: 0, b: 0.6666665, a: 0}
     - _MetallicRemap: {r: 0, g: 1, b: 0, a: 1}
     - _PulseTextureDirection: {r: 0, g: 1, b: 0, a: 0}
     - _RimCol: {r: 1, g: 1, b: 1, a: 1}

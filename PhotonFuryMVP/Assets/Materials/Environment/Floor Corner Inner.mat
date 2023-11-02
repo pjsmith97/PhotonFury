@@ -8,17 +8,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Floor Corner Inner
-  m_Shader: {fileID: -8512187303908658807, guid: bb1fc5fc14b648debb2f566068d58f43, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 2100000, guid: 8cc91838074a74fc59daae4989c48291, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - BAKED_SPECULAR
-  - BAKERY_SHNONLINEAR
-  - DETAILS_MODE_PACKED
-  m_InvalidKeywords:
-  - BAKERY_NONE
   - _NORMALMAP
   - _PARALLAXMAP
+  m_InvalidKeywords:
+  - BAKED_SPECULAR
+  - BAKERY_NONE
+  - BAKERY_SHNONLINEAR
+  - DETAILS_MODE_PACKED
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

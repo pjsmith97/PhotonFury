@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Karl.Movement.YesPhillipNoticeMyNameSpace;
 using UnityEngine;
 using UnityEngine.UI;
 using photonfury.level;
@@ -32,7 +33,7 @@ namespace photonfury.health
             if (!invincible)
             {
                 base.Damage(dmgValue);
-
+                gameObject.transform.GetChild(3).GetComponent<Animator>().SetTrigger("onHit");
                 UpdateHealthBar();
             }
         }
@@ -60,9 +61,8 @@ namespace photonfury.health
         public override void Death()
         {
             base.Death();
-            this.transform.GetChild(2).gameObject.SetActive(false);
-
-            lvlPrgsManager.gameOver = true;
+            GetComponent<KarlsMovement>().enabled = false;
+            lvlPrgsManager.GameOver();
         }
     }
 

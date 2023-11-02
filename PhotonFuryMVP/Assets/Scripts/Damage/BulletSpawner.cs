@@ -65,6 +65,9 @@ public class BulletSpawner : MonoBehaviour
             spawnedBullet.GetComponent<Bullet>().SetUpBullet(speed,
                 transform.rotation, bulletLife, player); // Set up Bullet attributes
 
+            Physics.IgnoreCollision(this.GetComponent<Collider>(),
+                spawnedBullet.transform.GetComponent<Collider>());
+
             if (doubleFire)
             {
                 spawnedBullet = Instantiate(bulletPrefab, transform.position,
@@ -72,6 +75,9 @@ public class BulletSpawner : MonoBehaviour
 
                 spawnedBullet.GetComponent<Bullet>().SetUpBullet(-speed,
                     transform.rotation, bulletLife, player); // Set up Bullet attributes
+
+                Physics.IgnoreCollision(this.GetComponent<Collider>(),
+                    spawnedBullet.transform.GetComponent<Collider>());
             }
         }
     }

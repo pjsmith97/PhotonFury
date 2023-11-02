@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Karl.Movement.YesPhillipNoticeMyNameSpace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using photonfury.pause;
@@ -70,8 +71,14 @@ namespace photonfury.level
 
             if (!enemiesExist)
             {
-                gameOver = true;
+                GameOver();
             }
+        }
+
+        public void GameOver()
+        {
+            gameOver = true;
+            playerHealth.gameObject.GetComponent<KarlsMovement>().enabled = false;
         }
     }
 
