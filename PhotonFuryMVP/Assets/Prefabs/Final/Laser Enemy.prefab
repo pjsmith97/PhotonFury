@@ -464,7 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   lvlPrgsManager: {fileID: 0}
-  _particleSystem: {fileID: 5980620772802047512, guid: d554d65cc3a384c0ab0f6abda43ad3d7, type: 3}
+  _particleSystem: {fileID: 5980620772802047512, guid: 172b94dd2d39c49cf84034f5edb134ee, type: 3}
 --- !u!4 &5553126140786216606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90eef898d761d42c19e97516b5bb0060, type: 3}
