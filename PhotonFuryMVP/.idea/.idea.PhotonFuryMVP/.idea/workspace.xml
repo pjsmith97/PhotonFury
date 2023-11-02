@@ -7,7 +7,8 @@
     <list default="true" id="2fdcd9b0-a75c-4157-9054-905224cea8e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotonFuryMVP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/FakeLight/FakeLight_new_CubeVolumeProjection_Unity2019.3.0f3.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Actions/New Character Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KarlsMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
