@@ -14,6 +14,7 @@ namespace photonfury.level
         public List<EnemyHealth> enemyHealths;
 
         [SerializeField] PauseGame pauseManager;
+        [SerializeField] private GameObject youwin;
 
         [SerializeField] float yDeathValue;
 
@@ -71,12 +72,14 @@ namespace photonfury.level
 
             if (!enemiesExist)
             {
+                youwin.SetActive(true);
                 GameOver();
             }
         }
 
         public void GameOver()
         {
+            pauseManager.TogglePause();
             gameOver = true;
             playerHealth.gameObject.GetComponent<KarlsMovement>().enabled = false;
         }

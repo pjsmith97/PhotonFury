@@ -7,6 +7,8 @@ namespace photonfury.pause
     public class PauseGame : MonoBehaviour
     {
         public bool paused;
+        [SerializeField] private GameObject pausescrene;
+        
 
         // Start is called before the first frame update
         void Start()
@@ -28,10 +30,12 @@ namespace photonfury.pause
             if (!paused)
             {
                 Time.timeScale = 0;
+                pausescrene.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
+                pausescrene.SetActive(false);
             }
 
             paused = !paused;

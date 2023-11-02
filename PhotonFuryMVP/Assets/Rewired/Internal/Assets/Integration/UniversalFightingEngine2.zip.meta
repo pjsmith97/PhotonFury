@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:PhotonFuryMVP/Assets/Rewired/Internal/Assets/Integration/UniversalFightingEngine2.zip.meta
 guid: 2a2c3e7461e6189499e5df5d735bf541
+========
+guid: b41e33ed1fe8a4e99a904a7ea04640fb
+>>>>>>>> 13019acd6ff747bc3aa8504faecf9e76c40eac04:PhotonFuryMVP/Assets/Scenes/Playershoot.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
