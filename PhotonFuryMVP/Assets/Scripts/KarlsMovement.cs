@@ -43,6 +43,8 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         
         [SerializeField] GameObject dashShield;
         [SerializeField] TrailRenderer trail;
+        public GameObject dashUI;
+        
         private PlayerHealth _playerHealth;
 
         [Header("Slope Handling")]
@@ -86,6 +88,7 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
             if (Input.GetKeyDown(KeyCode.D) && _ableToDash) {
                 dashing = true;
                 _ableToDash = false;
+                dashUI.transform.GetChild(1).gameObject.SetActive(false);
             }
             if (Input.GetKeyDown(KeyCode.Space) && _ableToJump && _isGrounded) {
                 _jumping = true;
@@ -103,6 +106,7 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         }
         void Dash() {
             _dashtimer += Time.deltaTime;
+            dashUI.transform.localScale = Vector3.one * ((_dashduration - _dashtimer) / _dashduration);
             if (_dashtimer >= _dashduration) {
                 _dashtimer = 0;
                 dashing = false;
@@ -111,10 +115,14 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         }
         void DashCool() {
             _dashcooltimer += Time.deltaTime;
+            dashUI.transform.localScale = Vector3.one * (_dashcooltimer / _dashcoolduration);
             if (_dashcooltimer >= _dashcoolduration) {
                 _dashcooltimer = 0;
                 _dashcooling = false;
                 _ableToDash = true;
+                dashUI.transform.localScale = Vector3.one;
+                dashUI.transform.GetChild(1).gameObject.SetActive(true);
+
             }
         }
 
