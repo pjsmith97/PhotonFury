@@ -2108,6 +2108,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6921022243358948109, guid: d02943909bcc24a05aab4fad946ffc18, type: 3}
+      propertyPath: m_Name
+      value: HealthText
+      objectReference: {fileID: 0}
     - target: {fileID: 7361489883766750894, guid: d02943909bcc24a05aab4fad946ffc18, type: 3}
       propertyPath: m_Name
       value: HealthBar
@@ -3118,10 +3122,10 @@ RectTransform:
   - {fileID: 353171758}
   m_Father: {fileID: 981034329}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476, y: 102}
-  m_SizeDelta: {x: 122.97998, y: 122.979996}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -61.48999, y: -61.48999}
+  m_SizeDelta: {x: 122.97998, y: 122.97998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1086437310 stripped
 GameObject:
