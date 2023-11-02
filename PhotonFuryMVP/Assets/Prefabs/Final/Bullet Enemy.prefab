@@ -289,7 +289,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   lvlPrgsManager: {fileID: 0}
+  _particleSystem: {fileID: 5980620772802047512, guid: d554d65cc3a384c0ab0f6abda43ad3d7, type: 3}
 --- !u!114 &4703940573094845320
 MonoBehaviour:
   m_ObjectHideFlags: 0
