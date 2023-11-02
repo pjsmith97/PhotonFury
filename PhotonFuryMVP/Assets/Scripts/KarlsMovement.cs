@@ -61,6 +61,7 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
 
             _playerHealth.invincible = dashing;
             dashShield.SetActive(dashing);
+            trail.gameObject.SetActive(dashing);
             trail.time = dashing ?  0.5f : 0;
         }
         

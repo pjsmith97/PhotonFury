@@ -32,7 +32,7 @@ namespace photonfury.health
             if (!invincible)
             {
                 base.Damage(dmgValue);
-                gameObject.transform.GetChild(6).GetComponent<Animator>().SetTrigger("onHit");
+                gameObject.transform.GetChild(3).GetComponent<Animator>().SetTrigger("onHit");
                 UpdateHealthBar();
             }
         }
