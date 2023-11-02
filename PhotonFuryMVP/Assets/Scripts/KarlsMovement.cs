@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
+using Rewired;
 
 namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
     public class KarlsMovement : MonoBehaviour {
@@ -17,6 +18,8 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         [Header("PlayerInput")]
         private Vector3 _playerInputVector;
         private float _playerInputAngleOffset = 225;
+        private int playerID = 0;
+        private Player rewiredPlayer;
         
         [Header("PlayerMovement")]
         private Vector3 _playerMovementVector;
@@ -55,6 +58,8 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
         void Start() {
             _rigidbody = GetComponent<Rigidbody>();
             _playerHealth = GetComponent<PlayerHealth>();
+
+            rewiredPlayer = ReInput.players.GetPlayer(playerID);
         }
         // Update is called once per frame
         void Update() {
@@ -83,14 +88,14 @@ namespace Karl.Movement.YesPhillipNoticeMyNameSpace {
             MovePlayer();
         }
         void GetPlayerInput() {
-            _playerInputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+            _playerInputVector = new Vector3(rewiredPlayer.GetAxisRaw("Horizontal"), 0f, rewiredPlayer.GetAxisRaw("Vertical"));
             _playerInputVector = Quaternion.Euler(0, _playerInputAngleOffset, 0) * _playerInputVector;
-            if (Input.GetKeyDown(KeyCode.D) && _ableToDash) {
+            if (rewiredPlayer.GetButtonDown("Dash") && _ableToDash) {
                 dashing = true;
                 _ableToDash = false;
                 dashUI.transform.GetChild(1).gameObject.SetActive(false);
             }
-            if (Input.GetKeyDown(KeyCode.Space) && _ableToJump && _isGrounded) {
+            if (rewiredPlayer.GetButtonDown("Jump") && _ableToJump && _isGrounded) {
                 _jumping = true;
                 _ableToJump = false;
             }
