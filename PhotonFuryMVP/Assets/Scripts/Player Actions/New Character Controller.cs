@@ -30,6 +30,7 @@ public class NewCharacterController : MonoBehaviour
     public int dashingEndDebugCntr;
     [SerializeField] GameObject dashShield;
     [SerializeField] TrailRenderer trail;
+    public GameObject dashUI;
     private PlayerHealth playerHealth;
 
     [Header ("Level Manager")]
@@ -90,16 +91,25 @@ private void Start()
                 dashingCoolDownTimer = dashingCoolDownDuration;
 
                 playerHealth.invincible = false;
+
+                
             }
         }
 
         else if(dashingCoolDownTimer > 0)
         {
             dashingCoolDownTimer -= Time.deltaTime;
+            float progress =
+                (dashingCoolDownDuration - dashingCoolDownTimer) /
+                dashingCoolDownDuration;
+
+            dashUI.transform.localScale = Vector3.one * progress;
 
             if (dashingCoolDownTimer <= 0)
             {
                 dashingCoolDownTimer = 0;
+                dashUI.transform.localScale = Vector3.one;
+                dashUI.transform.GetChild(1).gameObject.SetActive(true);
             }
         }
     }
@@ -123,6 +133,9 @@ private void Start()
             Debug.Log("Dashing Counter: " + dashingDebugCntr);
 
             playerHealth.invincible = true;
+
+            dashUI.transform.localScale = Vector3.zero;
+            dashUI.transform.GetChild(1).gameObject.SetActive(false);
         }
     }
 
