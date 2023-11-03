@@ -64,7 +64,7 @@ public class Bullet : MonoBehaviour
         if (other.gameObject == _player)
         {
             Debug.Log("Hit player");
-            _player.GetComponent<PlayerHealth>().Damage(20); // Apply 20 damage
+            _player.GetComponent<PlayerHealth>().Damage(10); // Apply 20 damage
             
             Destroy(this.gameObject);
         }

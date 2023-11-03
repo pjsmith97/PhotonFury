@@ -20,7 +20,7 @@ public class Laser : MonoBehaviour
             //Debug.Log("Health Pre-Damage: " +
             //    _player.GetComponent<PlayerHealth>().CurrentHealth());
 
-            _player.GetComponent<PlayerHealth>().Damage(20); //When hit by
+            _player.GetComponent<PlayerHealth>().Damage(10); //When hit by
                                                              //laser, do 20 damage
             //Debug.Log("Health Post-Damage: " +
             //    _player.GetComponent<PlayerHealth>().CurrentHealth());
